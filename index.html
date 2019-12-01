@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="lib/normalize.css">
+  <link rel="stylesheet" href="lib/bootstrap-grid.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="lib/fanxybox.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Modal</title>
+</head>
+
+<body>
+  <a id="modal-btn" href="#">da</a>
+  <div class="modal-formBack"></div>
+  <div id="modal" class="modal-form form">
+    <div class="form-header">
+      <img class="col-sm-2" src="image/mfcn-logo.png" alt="">
+      <div class="form-count col-sm-1"><span>1</span>/8</div>
+      <ul class="progress">
+        <li class="progress__item progress__item--active col-sm">
+          <div class="progress-circle"></div>
+        </li>
+        <li class="progress__item col-sm">
+          <div class="progress-circle"></div>
+        </li>
+        <li class="progress__item col-sm">
+          <div class="progress-circle"></div>
+        </li>
+        <li class="progress__item col-sm">
+          <div class="progress-circle"></div>
+        </li>
+        <li class="progress__item col-sm">
+          <div class="progress-circle"></div>
+        </li>
+        <li class="progress__item col-sm">
+          <div class="progress-circle"></div>
+        </li>
+        <li class="progress__item col-sm">
+          <div class="progress-circle"></div>
+        </li>
+        <li class="progress__item col-sm">
+          <div class="progress-circle"></div>
+        </li>
+      </ul>
+      <div class="form-close__wrap col-sm-1 d-flex justify-content-end">
+        <img class="form-close" src="image/x.png" alt="">
+      </div>
+    </div>
+    <form action="#">
+
+      <div class="form-tabs">
+
+
+
+        <div class="form-tab">
+          <p class="form-tab-title">Контактные данные</p>
+          <div class="d-flex flex-column">
+            <div class="d-flex mb-2">
+              <label class="form-label">
+                <span>Фамилия</span>
+                <input class="form-input" type="text" placeholder="">
+              </label>
+              <label class="form-label">
+                <span>Новая фамилия</span>
+                <input disabled class="form-input" type="text" placeholder="дд.мм.гггг">
+              </label>
+              <label class="form-label">
+                <span>Дата изменения</span>
+                <input id="calendar-sm" class="form-input form-input-data" type="text" placeholder="дд.мм.гггг">
+              </label>
+            </div>
+            <div class="flex-column mb-3">
+              <label class="checkbox-mask-label d-flex align-items-center">
+                <div class="checkbox-mask-wrap">
+                  <input class="checkbox" type="checkbox">
+                  <span class="checkbox-mask"></span>
+                </div>
+                <span>Фамилия менялась</span>
+              </label>
+            </div>
+            <label class="form-label mb-3">
+              <span>Имя</span>
+              <input class="form-input" type="text" placeholder="">
+            </label>
+            <label class="form-label mb-3">
+              <span>Отчество</span>
+              <input class="form-input" type="text" placeholder="">
+            </label>
+            <label class="form-label mb-3">
+              <span>Дата изменения</span>
+              <input id="calendar-burn" class="form-input form-input-data" type="text" placeholder="дд.мм.гггг">
+            </label>
+            <label class="form-label mb-3">
+              <span>E-mail</span>
+              <input class="form-input" type="email" placeholder="">
+            </label>
+            <label class="checkbox-mask-label d-flex align-items-center">
+              <div class="checkbox-mask-wrap">
+                <input class="checkbox" type="checkbox">
+                <span class="checkbox-mask"></span>
+              </div>
+              <span>Подтверждаю свое согласие <a href="#">с условиями передачи данных</a></span>
+            </label>
+          </div>
+
+
+        </div>
+
+
+
+
+        <div class="form-tab">
+          <p class="form-tab-title">Укажите ваше образование</p>
+          <div class="d-flex flex-column">
+            <label class="radio-label d-flex align-items-center mb-2">
+              <div class="radio-wrap">
+                <input class="radio" type="radio" name="education" id="">
+                <span class="radio-mask"></span>
+              </div>
+              <span>Начальное / Неполное среднее</span>
+            </label>
+            <label class="radio-label d-flex align-items-center mb-2">
+              <div class="radio-wrap">
+                <input class="radio" type="radio" name="education" id="">
+                <span class="radio-mask"></span>
+              </div>
+              <span>Среднее или специальное</span>
+            </label>
+            <label class="radio-label d-flex align-items-center mb-2">
+              <div class="radio-wrap">
+                <input class="radio" type="radio" name="education" id="">
+                <span class="radio-mask"></span>
+              </div>
+              <span>Высшее</span>
+            </label>
+            <label class="radio-label d-flex align-items-center">
+              <div class="radio-wrap">
+                <input class="radio" type="radio" name="education" id="">
+                <span class="radio-mask"></span>
+              </div>
+              <span>Два и более высших</span>
+            </label>
+          </div>
+        </div>
+
+
+        <div class="form-tab">
+          <p class="form-tab-title">Семейное положение</p>
+          <div class="row">
+            <div class="col-6 d-flex flex-column mb-3">
+              <label class="radio-label d-flex align-items-center mb-2">
+                <div class="radio-wrap">
+                  <input class="radio" type="radio" name="education" id="">
+                  <span class="radio-mask"></span>
+                </div>
+                <span>Не в браке</span>
+              </label>
+              <p class="mb-2 family-text">Добавьте свидетельство о разводе/свидетельство о смерти, если это необходимо
+              </p>
+              <label class="d-flex align-items-center file-label">
+                <img class="file-img mr-2" src="image/upload.png" alt="">
+                <input class="file-input" type="file" name="" id="">
+                <span class="file-text">Загрузить <span>(Удалить)</span></span>
+              </label>
+            </div>
+            <div class="col-6 d-flex flex-column mb-3">
+              <label class="radio-label d-flex align-items-center mb-2">
+                <div class="radio-wrap">
+                  <input class="radio" type="radio" name="education" id="">
+                  <span class="radio-mask"></span>
+                </div>
+                <span>В браке</span>
+              </label>
+              <p class="mb-2 family-text">Добавьте свидетельство о браке/брачный контракт (если есть)</p>
+              <label class="d-flex align-items-center file-label">
+                <img class="file-img mr-2" src="image/upload.png" alt="">
+                <input class="file-input" type="file" name="" id="">
+                <span class="file-text">Загрузить<span>(Удалить)</span></span>
+              </label>
+            </div>
+          </div>
+          <div class="delitel mb-4 mt-2"></div>
+          <div class="row">
+            <div class="col-6 d-flex flex-column">
+              <label class="radio-label d-flex align-items-center mb-2">
+                <div class="radio-wrap">
+                  <input class="radio" type="radio" name="education" id="">
+                  <span class="radio-mask"></span>
+                </div>
+                <span>Нет детей</span>
+              </label>
+            </div>
+            <div class="col-6">
+              <label class="radio-label d-flex align-items-center mb-2">
+                <div class="radio-wrap">
+                  <input class="radio" type="radio" name="education" id="">
+                  <span class="radio-mask"></span>
+                </div>
+                <span>Есть дети</span>
+              </label>
+              <p class="mb-2 family-text">Добавьте свидетельство о рождении детей</p>
+              <label class="d-flex align-items-center file-label">
+                <img class="file-img mr-2" src="image/upload.png" alt="">
+                <input class="file-input" type="file" name="" id="">
+                <span class="file-text">Загружено<span>(Удалить)</span></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="form-tab">
+          <p class="form-tab-title">Адрес</p>
+          <div class="row">
+            <div class="col-6">
+              <p class="mb-3">Адрес постоянной/временной регистрации</p>
+              <div class="d-flex flex-column">
+                <label class="form-label mb-2">
+                  <span>Область</span>
+                  <input class="form-input" type="text" placeholder="">
+                </label>
+                <label class="form-label mb-2">
+                  <span>Город</span>
+                  <input class="form-input" type="text" placeholder="">
+                </label>
+                <label class="form-label mb-2">
+                  <span>Улица</span>
+                  <input class="form-input" type="text" placeholder="">
+                </label>
+                <div class="d-flex justify-content-between input-double">
+                  <label class="form-label mb-2 input-double-item">
+                    <span>Дом</span>
+                    <input class="form-input" type="text" placeholder="">
+                  </label>
+                  <label class="form-label mb-2 input-double-item">
+                    <span>Квартира</span>
+                    <input class="form-input" type="text" placeholder="">
+                  </label>
+                </div>
+
+              </div>
+            </div>
+            <div class="col-6">
+              <p class="mb-3">Адрес фактического места проживания</p>
+              <div class="d-flex flex-column">
+                <label class="form-label mb-2">
+                  <span>Область</span>
+                  <input class="form-input" type="text" placeholder="">
+                </label>
+                <label class="form-label mb-2">
+                  <span>Город</span>
+                  <input class="form-input" type="text" placeholder="">
+                </label>
+                <label class="form-label mb-2">
+                  <span>Улица</span>
+                  <input class="form-input" type="text" placeholder="">
+                </label>
+                <div class="d-flex justify-content-between input-double">
+                  <label class="form-label mb-2 input-double-item">
+                    <span>Дом</span>
+                    <input class="form-input" type="text" placeholder="">
+                  </label>
+                  <label class="form-label mb-2 input-double-item">
+                    <span>Квартира</span>
+                    <input class="form-input" type="text" placeholder="">
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-tab">
+          <p class="form-tab-title">Место работы</p>
+          <label class="radio-label d-flex align-items-center mb-2">
+            <div class="radio-wrap">
+              <input class="radio" type="radio" name="education" id="">
+              <span class="radio-mask"></span>
+            </div>
+            <span>Срочно</span>           
+          </label>
+          <div class=" work d-flex flex-wrap">
+            <label class="form-label mb-3">
+              <span>Рабочий телефон</span>
+              <input class="form-input" type="text" placeholder="">
+            </label>
+            <label class="form-label mb-3">
+              <span>Должность</span>
+              <input class="form-input" type="text" placeholder="">
+            </label>
+            <label class="form-label mb-3">
+              <span>Мест работ за последние 5 лет</span>
+              <input class="form-input" type="text" placeholder="">
+            </label>
+            <label class="form-label mb-3">
+              <span>Общий стаж</span>
+              <input class="form-input" type="text" placeholder="">
+            </label>
+            <label class="form-label mb-3">
+              <span>Кол-во сотрудников работающих в организации</span>
+              <input class="form-input" type="text" placeholder="">
+            </label>
+          </div>
+          <label class="radio-label d-flex align-items-center mb-2">
+            <div class="radio-wrap">
+              <input class="radio" type="radio" name="education" id="">
+              <span class="radio-mask"></span>
+            </div>
+            <span>Бессрочно</span>           
+          </label>
+          <label class="radio-label d-flex align-items-center mb-2">
+            <div class="radio-wrap">
+              <input class="radio" type="radio" name="education" id="">
+              <span class="radio-mask"></span>
+            </div>
+            <span>ИП</span>           
+          </label>
+          <p>Прикрепите декларацию за последний календарный год/инк на ИП/св-во о государственной регистрации/справку об отсутвии задолженности/лицензию (если есть)</p>
+          <label class="d-flex align-items-center file-label">
+            <img class="file-img mr-2" src="image/upload.png" alt="">
+            <input class="file-input" type="file" name="" id="">
+            <span class="file-text">Загружено<span>(Удалить)</span></span>
+          </label>
+          <label class="radio-label d-flex align-items-center mb-2">
+            <div class="radio-wrap">
+              <input class="radio" type="radio" name="education" id="">
+              <span class="radio-mask"></span>
+            </div>
+            <span>Владелец бизнеса</span>           
+          </label>
+          
+
+        </div>
+        <div class="form-tab">
+          <p class="form-tab-title">Место работы</p>
+          <label class="form-label">
+            <span>Фамилия</span>
+            <input class="form-input" type="text" placeholder="">
+          </label>
+          <label class="checkbox-mask-label d-flex align-items-center">
+            <div class="checkbox-mask-wrap">
+              <input class="checkbox" type="checkbox">
+              <span class="checkbox-mask"></span>
+            </div>
+            <span>З/п клиента банка</span>
+          </label>
+          <div class="d-flex">
+            <label class="form-label">
+              <span>Банк</span>
+              <input class="form-input" type="text" placeholder="">
+            </label>
+            <label class="form-label">
+              <span>Номер карты</span>
+              <input class="form-input" type="text" placeholder="">
+            </label>
+          </div>
+          <label class="checkbox-mask-label d-flex align-items-center">
+            <div class="checkbox-mask-wrap">
+              <input class="checkbox" type="checkbox">
+              <span class="checkbox-mask"></span>
+            </div>
+            <span>Есть дополнительный доход</span>
+          </label>
+          <label class="checkbox-mask-label d-flex align-items-center">
+            <div class="checkbox-mask-wrap">
+              <input class="checkbox" type="checkbox">
+              <span class="checkbox-mask"></span>
+            </div>
+            <span>Учитывать доходы супруга и супруги</span>
+          </label>
+          <div class="d-flex flex-column">
+            <p>Прикрипите справку 2ндфл или по форме банка/договор на совместительство/справка о пенсии/пенсионное удостоверение</p>
+            <label class="d-flex align-items-center file-label">
+              <img class="file-img mr-2" src="image/upload.png" alt="">
+              <input class="file-input" type="file" name="" id="">
+              <span class="file-text">Загрузить<span>(Удалить)</span></span>
+            </label>
+          </div>
+          <div class="d-flex flex-column">
+            <p>Прикрипите справку 2ндфл супруги и копию трудовой книжки</p>
+            <label class="d-flex align-items-center file-label">
+              <img class="file-img mr-2" src="image/upload.png" alt="">
+              <input class="file-input" type="file" name="" id="">
+              <span class="file-text">Загрузить<span>(Удалить)</span></span>
+            </label>
+          </div>
+        </div>
+
+
+
+
+        <div class="form-tab">
+          <p class="form-tab-title">Сведения о кредите</p>
+          <div class="row">
+            <div class="col-6">
+              <label class="form-label">
+                <span>Стоимость объекта</span>
+                <input class="form-input" type="text" placeholder="">
+              </label>
+            </div>
+            <div class="col-6">
+              <label class="form-label">
+                <span>Срок кредита</span>
+                <input class="form-input" type="text" placeholder="">
+              </label>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="form-tab">8</div>
+      </div>
+
+    </form>
+    <div class="form-footer">
+      <div id="btn-prew" class="form-btn form-btn-reverse">Назад</div>
+      <div id="btn-next" class="form-btn">Далее</div>
+      <div id="btn-send" class="form-btn">Отправить заявку</div>
+    </div>
+  </div>
+
+
+  <script src="lib/jquery.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="lib/fancybox.js"></script>
+  <script src="js/javascript.js"></script>
+</body>
+
+</html>
