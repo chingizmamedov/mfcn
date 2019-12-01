@@ -1,8 +1,21 @@
+@font-face {
+  font-family: 'Muller';
+  src: url("../fonts/MullerRegular.woff2") format("woff2"), url("../fonts/MullerRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Muller';
+}
+
+.link-soqlasen {
+  color: #0D5E98;
+  text-decoration: none;
 }
 
 #btn-prew {
@@ -192,6 +205,10 @@
   color: #606060;
 }
 
+.form-label-money {
+  max-width: unset;
+}
+
 .form-label span {
   font-size: 14px;
   line-height: 16px;
@@ -232,6 +249,10 @@
   background-image: url("../image/calendar.png");
   background-repeat: no-repeat;
   background-position: 115px center;
+}
+
+.form-input-money {
+  max-width: unset;
 }
 
 .progress {

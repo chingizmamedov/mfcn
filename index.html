@@ -103,7 +103,7 @@
                 <input class="checkbox" type="checkbox">
                 <span class="checkbox-mask"></span>
               </div>
-              <span>Подтверждаю свое согласие <a href="#">с условиями передачи данных</a></span>
+              <span>Подтверждаю свое согласие <a class="link-soqlasen" href="#">с условиями передачи данных</a></span>
             </label>
           </div>
 
@@ -280,7 +280,7 @@
             </div>
             <span>Срочно</span>           
           </label>
-          <div class=" work d-flex flex-wrap">
+          <div class=" work d-flex flex-wrap mb-3">
             <label class="form-label mb-3">
               <span>Рабочий телефон</span>
               <input class="form-input" type="text" placeholder="">
@@ -302,7 +302,7 @@
               <input class="form-input" type="text" placeholder="">
             </label>
           </div>
-          <label class="radio-label d-flex align-items-center mb-2">
+          <label class="radio-label d-flex align-items-center mb-3">
             <div class="radio-wrap">
               <input class="radio" type="radio" name="education" id="">
               <span class="radio-mask"></span>
@@ -316,8 +316,8 @@
             </div>
             <span>ИП</span>           
           </label>
-          <p>Прикрепите декларацию за последний календарный год/инк на ИП/св-во о государственной регистрации/справку об отсутвии задолженности/лицензию (если есть)</p>
-          <label class="d-flex align-items-center file-label">
+          <p class="mb-2">Прикрепите декларацию за последний календарный год/инк на ИП/св-во о государственной регистрации/справку об отсутвии задолженности/лицензию (если есть)</p>
+          <label class="d-flex align-items-center file-label mb-4">
             <img class="file-img mr-2" src="image/upload.png" alt="">
             <input class="file-input" type="file" name="" id="">
             <span class="file-text">Загружено<span>(Удалить)</span></span>
@@ -333,19 +333,19 @@
 
         </div>
         <div class="form-tab">
-          <p class="form-tab-title">Место работы</p>
-          <label class="form-label">
-            <span>Фамилия</span>
+          <p class="form-tab-title mb-3">Доход</p>
+          <label class="form-label mb-3">
+            <span>Ежемесячный доход в рублях</span>
             <input class="form-input" type="text" placeholder="">
           </label>
-          <label class="checkbox-mask-label d-flex align-items-center">
+          <label class="checkbox-mask-label d-flex align-items-center mb-2">
             <div class="checkbox-mask-wrap">
               <input class="checkbox" type="checkbox">
               <span class="checkbox-mask"></span>
             </div>
             <span>З/п клиента банка</span>
           </label>
-          <div class="d-flex">
+          <div class="d-flex mb-3">
             <label class="form-label">
               <span>Банк</span>
               <input class="form-input" type="text" placeholder="">
@@ -355,14 +355,14 @@
               <input class="form-input" type="text" placeholder="">
             </label>
           </div>
-          <label class="checkbox-mask-label d-flex align-items-center">
+          <label class="checkbox-mask-label d-flex align-items-center mb-2">
             <div class="checkbox-mask-wrap">
               <input class="checkbox" type="checkbox">
               <span class="checkbox-mask"></span>
             </div>
             <span>Есть дополнительный доход</span>
           </label>
-          <label class="checkbox-mask-label d-flex align-items-center">
+          <label class="checkbox-mask-label d-flex align-items-center mb-2">
             <div class="checkbox-mask-wrap">
               <input class="checkbox" type="checkbox">
               <span class="checkbox-mask"></span>
@@ -370,15 +370,15 @@
             <span>Учитывать доходы супруга и супруги</span>
           </label>
           <div class="d-flex flex-column">
-            <p>Прикрипите справку 2ндфл или по форме банка/договор на совместительство/справка о пенсии/пенсионное удостоверение</p>
-            <label class="d-flex align-items-center file-label">
+            <p class="mb-2">Прикрипите справку 2ндфл или по форме банка/договор на совместительство/справка о пенсии/пенсионное удостоверение</p>
+            <label class="d-flex align-items-center file-label mb-3">
               <img class="file-img mr-2" src="image/upload.png" alt="">
               <input class="file-input" type="file" name="" id="">
               <span class="file-text">Загрузить<span>(Удалить)</span></span>
             </label>
           </div>
           <div class="d-flex flex-column">
-            <p>Прикрипите справку 2ндфл супруги и копию трудовой книжки</p>
+            <p class="mb-2">Прикрипите справку 2ндфл супруги и копию трудовой книжки</p>
             <label class="d-flex align-items-center file-label">
               <img class="file-img mr-2" src="image/upload.png" alt="">
               <input class="file-input" type="file" name="" id="">
@@ -394,23 +394,79 @@
           <p class="form-tab-title">Сведения о кредите</p>
           <div class="row">
             <div class="col-6">
-              <label class="form-label">
+              <label class="form-label form-label-money">
                 <span>Стоимость объекта</span>
-                <input class="form-input" type="text" placeholder="">
+                <input class="form-input form-input-money" type="text" placeholder="">
               </label>
             </div>
             <div class="col-6">
-              <label class="form-label">
+              <label class="form-label form-label-money">
                 <span>Срок кредита</span>
-                <input class="form-input" type="text" placeholder="">
+                <input class="form-input form-input-money" type="text" placeholder="">
               </label>
             </div>
           </div>
+          <p>Первоначальный взнос</p>
+          <div class="d-flex">
+            <label class="radio-label d-flex align-items-center mb-2">
+              <div class="radio-wrap">
+                <input class="radio" type="radio" name="education" id="">
+                <span class="radio-mask"></span>
+              </div>
+              <span>До 20%</span>
+            </label>
+            <label class="radio-label d-flex align-items-center mb-2">
+              <div class="radio-wrap">
+                <input class="radio" type="radio" name="education" id="">
+                <span class="radio-mask"></span>
+              </div>
+              <span>Более 20%</span>
+            </label>
+          </div>
+          <label class="checkbox-mask-label d-flex align-items-center">
+            <div class="checkbox-mask-wrap">
+              <input class="checkbox" type="checkbox">
+              <span class="checkbox-mask"></span>
+            </div>
+            <span>С использованием материнского капитала</span>
+          </label>
+          <p>Прикрепите сертификат на материнский капитал</p>
+          <label class="d-flex align-items-center file-label">
+            <img class="file-img mr-2" src="image/upload.png" alt="">
+            <input class="file-input" type="file" name="" id="">
+            <span class="file-text">Загрузить <span>(Удалить)</span></span>
+          </label>
         </div>
 
 
 
-        <div class="form-tab">8</div>
+        <div class="form-tab">
+          <p class="form-tab-title">Цель кредитования</p>
+          <div class="d-flex">
+            <label class="radio-label d-flex align-items-center mb-2">
+              <div class="radio-wrap">
+                <input class="radio" type="radio" name="education" id="">
+                <span class="radio-mask"></span>
+              </div>
+              <span>Новостройка</span>
+            </label>
+            <label class="radio-label d-flex align-items-center mb-2">
+              <div class="radio-wrap">
+                <input class="radio" type="radio" name="education" id="">
+                <span class="radio-mask"></span>
+              </div>
+              <span>Готовое жилье</span>
+            </label>
+            <label class="radio-label d-flex align-items-center mb-2">
+              <div class="radio-wrap">
+                <input class="radio" type="radio" name="education" id="">
+                <span class="radio-mask"></span>
+              </div>
+              <span>Рефинансирование</span>
+            </label>
+          </div>
+          <p class="form-tab-title">Проверьте прикрепленные документы</p>
+        </div>
       </div>
 
     </form>
