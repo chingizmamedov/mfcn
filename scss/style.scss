@@ -150,6 +150,7 @@
       max-width: unset;
     }
     & span {
+      white-space: nowrap;
       font-size: 14px;
       line-height: 16px;
       display: inline-block;
@@ -347,6 +348,7 @@
   &-text {
     font-size: 16px;
     line-height: 24px;
+    border-bottom: 1px dashed green;
     & span {
       display: none;
       color: #8FC63D;
@@ -376,5 +378,17 @@
 .work {
   & .form-label {
     width: 25%;
+  }
+}
+
+.radio-select {
+  & p {
+    color: #AEAEAE;
+  }
+}
+
+.radio-selected {
+  & p {
+    color: #606060;
   }
 }

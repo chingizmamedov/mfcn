@@ -19,7 +19,7 @@
   <div id="modal" class="modal-form form">
     <div class="form-header">
       <img class="col-sm-2" src="image/mfcn-logo.png" alt="">
-      <div class="form-count col-sm-1"><span>1</span>/8</div>
+      <div class="form-count col-sm-1"><span>1</span> / 8</div>
       <ul class="progress">
         <li class="progress__item progress__item--active col-sm">
           <div class="progress-circle"></div>
@@ -151,10 +151,10 @@
         <div class="form-tab">
           <p class="form-tab-title">Семейное положение</p>
           <div class="row">
-            <div class="col-6 d-flex flex-column mb-3">
+            <div class="radio-select radio-selected col-6 d-flex flex-column mb-3">
               <label class="radio-label d-flex align-items-center mb-2">
                 <div class="radio-wrap">
-                  <input class="radio" type="radio" name="education" id="">
+                  <input checked class="radio" type="radio" name="family" id="">
                   <span class="radio-mask"></span>
                 </div>
                 <span>Не в браке</span>
@@ -164,13 +164,13 @@
               <label class="d-flex align-items-center file-label">
                 <img class="file-img mr-2" src="image/upload.png" alt="">
                 <input class="file-input" type="file" name="" id="">
-                <span class="file-text">Загрузить <span>(Удалить)</span></span>
+                <p class="file-text">Загрузить <span>(Удалить)</span></p>
               </label>
             </div>
-            <div class="col-6 d-flex flex-column mb-3">
+            <div class="radio-select col-6 d-flex flex-column mb-3">
               <label class="radio-label d-flex align-items-center mb-2">
                 <div class="radio-wrap">
-                  <input class="radio" type="radio" name="education" id="">
+                  <input class="radio" type="radio" name="family" id="">
                   <span class="radio-mask"></span>
                 </div>
                 <span>В браке</span>
@@ -179,7 +179,7 @@
               <label class="d-flex align-items-center file-label">
                 <img class="file-img mr-2" src="image/upload.png" alt="">
                 <input class="file-input" type="file" name="" id="">
-                <span class="file-text">Загрузить<span>(Удалить)</span></span>
+                <p class="file-text">Загрузить<span>(Удалить)</span></p>
               </label>
             </div>
           </div>
@@ -188,16 +188,16 @@
             <div class="col-6 d-flex flex-column">
               <label class="radio-label d-flex align-items-center mb-2">
                 <div class="radio-wrap">
-                  <input class="radio" type="radio" name="education" id="">
+                  <input checked class="radio" type="radio" name="children" id="">
                   <span class="radio-mask"></span>
                 </div>
                 <span>Нет детей</span>
               </label>
             </div>
-            <div class="col-6">
+            <div class="col-6 radio-select">
               <label class="radio-label d-flex align-items-center mb-2">
                 <div class="radio-wrap">
-                  <input class="radio" type="radio" name="education" id="">
+                  <input class="radio" type="radio" name="children" id="">
                   <span class="radio-mask"></span>
                 </div>
                 <span>Есть дети</span>
@@ -206,7 +206,7 @@
               <label class="d-flex align-items-center file-label">
                 <img class="file-img mr-2" src="image/upload.png" alt="">
                 <input class="file-input" type="file" name="" id="">
-                <span class="file-text">Загружено<span>(Удалить)</span></span>
+                <p class="file-text">Загружено<span>(Удалить)</span></p>
               </label>
             </div>
           </div>
@@ -273,7 +273,7 @@
         </div>
         <div class="form-tab">
           <p class="form-tab-title">Место работы</p>
-          <label class="radio-label d-flex align-items-center mb-2">
+          <label class="radio-label d-flex align-items-center mb-3">
             <div class="radio-wrap">
               <input class="radio" type="radio" name="education" id="">
               <span class="radio-mask"></span>
@@ -309,19 +309,23 @@
             </div>
             <span>Бессрочно</span>           
           </label>
-          <label class="radio-label d-flex align-items-center mb-2">
-            <div class="radio-wrap">
-              <input class="radio" type="radio" name="education" id="">
-              <span class="radio-mask"></span>
-            </div>
-            <span>ИП</span>           
-          </label>
-          <p class="mb-2">Прикрепите декларацию за последний календарный год/инк на ИП/св-во о государственной регистрации/справку об отсутвии задолженности/лицензию (если есть)</p>
-          <label class="d-flex align-items-center file-label mb-4">
-            <img class="file-img mr-2" src="image/upload.png" alt="">
-            <input class="file-input" type="file" name="" id="">
-            <span class="file-text">Загружено<span>(Удалить)</span></span>
-          </label>
+          <div class="radio-select">
+            <label class="radio-select radio-label d-flex align-items-center mb-2">
+              <div class="radio-wrap">
+                <input class="radio" type="radio" name="education" id="">
+                <span class="radio-mask"></span>
+              </div>
+              <span>ИП</span>           
+            </label>
+            <p class="mb-2">Прикрепите декларацию за последний календарный год/инк на ИП/св-во о государственной регистрации/справку об отсутвии задолженности/лицензию (если есть)</p>
+            <label class="d-flex align-items-center file-label mb-4">
+              <img class="file-img mr-2" src="image/upload.png" alt="">
+              <input class="file-input" type="file" name="" id="">
+              <p class="file-text">Загружено<span>(Удалить)</span></p>
+            </label>
+          </div>
+          
+          
           <label class="radio-label d-flex align-items-center mb-2">
             <div class="radio-wrap">
               <input class="radio" type="radio" name="education" id="">
@@ -362,23 +366,28 @@
             </div>
             <span>Есть дополнительный доход</span>
           </label>
-          <label class="checkbox-mask-label d-flex align-items-center mb-2">
+          <label class="checkbox-mask-label d-flex align-items-center mb-3">
             <div class="checkbox-mask-wrap">
               <input class="checkbox" type="checkbox">
               <span class="checkbox-mask"></span>
             </div>
             <span>Учитывать доходы супруга и супруги</span>
           </label>
-          <div class="d-flex flex-column">
-            <p class="mb-2">Прикрипите справку 2ндфл или по форме банка/договор на совместительство/справка о пенсии/пенсионное удостоверение</p>
-            <label class="d-flex align-items-center file-label mb-3">
+          <div class="d-flex flex-column ">
+            <div class="radio-select">
+              <p class="mb-2">Прикрипите справку 2ндфл или по форме банка/договор на совместительство/справка о пенсии/пенсионное удостоверение</p>
+            </div>            
+            <label class="d-flex align-items-center file-label mb-4">
               <img class="file-img mr-2" src="image/upload.png" alt="">
               <input class="file-input" type="file" name="" id="">
-              <span class="file-text">Загрузить<span>(Удалить)</span></span>
+              <p class="file-text">Загрузить<span>(Удалить)</span></p>
             </label>
           </div>
           <div class="d-flex flex-column">
-            <p class="mb-2">Прикрипите справку 2ндфл супруги и копию трудовой книжки</p>
+            <div class="radio-select">
+              <p class="mb-2">Прикрипите справку 2ндфл супруги и копию трудовой книжки</p>
+            </div>
+            
             <label class="d-flex align-items-center file-label">
               <img class="file-img mr-2" src="image/upload.png" alt="">
               <input class="file-input" type="file" name="" id="">
@@ -434,7 +443,7 @@
           <label class="d-flex align-items-center file-label">
             <img class="file-img mr-2" src="image/upload.png" alt="">
             <input class="file-input" type="file" name="" id="">
-            <span class="file-text">Загрузить <span>(Удалить)</span></span>
+            <p class="file-text">Загрузить <span>(Удалить)</span></p>
           </label>
         </div>
 

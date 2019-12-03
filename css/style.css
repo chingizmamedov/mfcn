@@ -210,6 +210,7 @@
 }
 
 .form-label span {
+  white-space: nowrap;
   font-size: 14px;
   line-height: 16px;
   display: inline-block;
@@ -445,6 +446,7 @@
 .file-text {
   font-size: 16px;
   line-height: 24px;
+  border-bottom: 1px dashed green;
 }
 
 .file-text span {
@@ -470,5 +472,13 @@
 
 .work .form-label {
   width: 25%;
+}
+
+.radio-select p {
+  color: #AEAEAE;
+}
+
+.radio-selected p {
+  color: #606060;
 }
 /*# sourceMappingURL=style.css.map */

@@ -39,6 +39,8 @@ $(function() {
     $('.progress__item').eq(formStep - 1).find('.progress-circle').addClass('progress-circle--done')
     $('.form-tab').hide()
     $('.form-tab').eq(formStep).show()
+    console.log("TCL: formStep", formStep)
+    $('.form-count span').text(formStep + 1)
   })
 
   $('#btn-prew').click(function() {
@@ -57,6 +59,8 @@ $(function() {
     $('.form-tab').eq(formStep - 1).show();
     
     --formStep
+    console.log("TCL: formStep", formStep)
+    $('.form-count span').text(formStep + 1)
     if(formStep < 7) {
       $('#btn-next').show()
       $('#btn-send').hide()
@@ -77,5 +81,14 @@ $(function() {
     e.preventDefault()
     $(this).parent().siblings('.file-input').val('')
     $(this).hide()
+  })
+
+
+  $(".radio").change(function() {
+    console.log('sa', $(".radio").is(':checked'))
+    $('.radio').each(function(index, item) {
+      console.log('each radio', item.is(':checked'))
+    })
+    
   })
 })
