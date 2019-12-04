@@ -14,9 +14,11 @@
 </head>
 
 <body>
-  <a id="modal-btn" href="#">da</a>
+  <a id="modal-btn" href="#">Modal1</a>
+  <a id="modal-btn2" href="#">Modal2</a>
+  <a id="modal-btn3" href="#">Modal3</a>
   <div class="modal-formBack"></div>
-  <div id="modal" class="modal-form form">
+  <div id="modal" class="modal-form form" style="display: none;">
     <div class="form-header">
       <img class="col-sm-2" src="image/mfcn-logo.png" alt="">
       <div class="form-count col-sm-1"><span>1</span> / 8</div>
@@ -415,9 +417,9 @@
               </label>
             </div>
           </div>
-          <p>Первоначальный взнос</p>
-          <div class="d-flex">
-            <label class="radio-label d-flex align-items-center mb-2">
+          <p class="mb-3">Первоначальный взнос</p>
+          <div class="d-flex mb-4">
+            <label class="radio-label d-flex align-items-center mb-2 mr-3">
               <div class="radio-wrap">
                 <input class="radio" type="radio" name="education" id="">
                 <span class="radio-mask"></span>
@@ -432,14 +434,14 @@
               <span>Более 20%</span>
             </label>
           </div>
-          <label class="checkbox-mask-label d-flex align-items-center">
+          <label class="checkbox-mask-label d-flex align-items-center mb-2">
             <div class="checkbox-mask-wrap">
               <input class="checkbox" type="checkbox">
               <span class="checkbox-mask"></span>
             </div>
             <span>С использованием материнского капитала</span>
           </label>
-          <p>Прикрепите сертификат на материнский капитал</p>
+          <p class="mb-2">Прикрепите сертификат на материнский капитал</p>
           <label class="d-flex align-items-center file-label">
             <img class="file-img mr-2" src="image/upload.png" alt="">
             <input class="file-input" type="file" name="" id="">
@@ -452,14 +454,14 @@
         <div class="form-tab">
           <p class="form-tab-title">Цель кредитования</p>
           <div class="d-flex">
-            <label class="radio-label d-flex align-items-center mb-2">
+            <label class="radio-label d-flex align-items-center mb-2 mr-3">
               <div class="radio-wrap">
                 <input class="radio" type="radio" name="education" id="">
                 <span class="radio-mask"></span>
               </div>
               <span>Новостройка</span>
             </label>
-            <label class="radio-label d-flex align-items-center mb-2">
+            <label class="radio-label d-flex align-items-center mb-2 mr-3">
               <div class="radio-wrap">
                 <input class="radio" type="radio" name="education" id="">
                 <span class="radio-mask"></span>
@@ -485,6 +487,108 @@
       <div id="btn-send" class="form-btn">Отправить заявку</div>
     </div>
   </div>
+
+
+  <div id="modal2" class="modal-form form" style="display: none;">
+    <div class="form-header">
+      <div class="flex-grow-1 d-flex flex-column align-items-center">
+        <p class="modal2-title">Оставьте заявку</p>
+        <p class="modal2-subtitle">На преобретение полиса защиты новосёла</p>
+      </div>
+      
+      <div class="form-close__wrap col-sm-1 d-flex justify-content-end">
+        <img class="form-close" src="image/x.png" alt="">
+      </div>
+    </div>
+    <form action="#">
+      <div class="modal-part d-flex flex-column align-items-center pt-4">
+        <label class="form-label mb-3 w-100">
+          <span>Фамилия</span>
+          <input class="form-input" type="text" placeholder="">
+        </label>
+        <label class="form-label mb-3 w-100">
+          <span>Имя</span>
+          <input class="form-input" type="text" placeholder="">
+        </label>
+        <label class="form-label mb-3 w-100">
+          <span>Отчество</span>
+          <input class="form-input" type="text" placeholder="">
+        </label>
+        <label class="form-label mb-3 w-100">
+          <span>Застройщик</span>
+          <input class="form-input" type="text" placeholder="">
+        </label>
+        <label class="form-label mb-3 w-100">
+          <span>E-mail</span>
+          <input class="form-input" type="text" placeholder="">
+        </label>
+        <label class="checkbox-mask-label d-flex align-items-center">
+          <div class="checkbox-mask-wrap mb-3">
+            <input class="checkbox" type="checkbox">
+            <span class="checkbox-mask"></span>
+          </div>
+          <span>Подтверждаю свое согласие <a class="link-soqlasen" href="#">с условиями передачи данных</a></span>
+        </label>
+      </div>
+      
+      
+      <div class="modal-part d-flex justify-content-end mt-3">
+          
+        <div class="form-btn modal2-btn">Отправить заявку</div>
+      </div>
+    </form>
+  </div>
+
+  <div id="modal3" class="modal-form form" style="display: none;">
+      <div class="form-header">
+        <div class="flex-grow-1 d-flex flex-column align-items-center">
+          <p class="modal2-title">Оставьте заявку</p>
+          <p class="modal2-subtitle">На преобретение полиса защиты новосёла</p>
+        </div>
+        
+        <div class="form-close__wrap col-sm-1 d-flex justify-content-end">
+          <img class="form-close" src="image/x.png" alt="">
+        </div>
+      </div>
+      <form action="#">
+        <div class="modal-part d-flex flex-column align-items-center pt-4">
+          <label class="form-label mb-3 w-100">
+            <span>Фамилия</span>
+            <input class="form-input" type="text" placeholder="">
+          </label>
+          <label class="form-label mb-3 w-100">
+            <span>Имя</span>
+            <input class="form-input" type="text" placeholder="">
+          </label>
+          <label class="form-label mb-3 w-100">
+            <span>Отчество</span>
+            <input class="form-input" type="text" placeholder="">
+          </label>
+          <label class="form-label mb-3 w-100">
+            <span>Застройщик</span>
+            <input class="form-input" type="text" placeholder="">
+          </label>
+          <label class="form-label mb-3 w-100">
+            <span>E-mail</span>
+            <input class="form-input" type="text" placeholder="">
+          </label>
+          <label class="checkbox-mask-label d-flex align-items-center">
+            <div class="checkbox-mask-wrap mb-3">
+              <input class="checkbox" type="checkbox">
+              <span class="checkbox-mask"></span>
+            </div>
+            <span>Подтверждаю свое согласие <a class="link-soqlasen" href="#">с условиями передачи данных</a></span>
+          </label>
+        </div>
+        
+        
+        <div class="modal-part d-flex justify-content-end mt-3">
+            
+          <div class="form-btn modal2-btn">Отправить заявку</div>
+        </div>
+      </form>
+    </div>
+
 
 
   <script src="lib/jquery.js"></script>

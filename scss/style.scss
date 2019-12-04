@@ -6,7 +6,10 @@
   font-style: normal;
 }
 
-
+.w-100 {
+  width: 100%;
+  max-width: unset !important;
+}
 
 * {
   margin: 0;
@@ -35,6 +38,24 @@
     display: none;
   }
 }
+#modal2 {
+  max-width: 552px;
+  margin: auto;
+  box-shadow: 0 0 10px #e1e1e1;
+  & form {
+    padding-bottom: 48px;
+    background: white;
+  }
+}
+#modal3 {
+  max-width: 552px;
+  margin: auto;
+  box-shadow: 0 0 10px #e1e1e1;
+  & form {
+    padding-bottom: 48px;
+    background: white;
+  }
+}
 #modal {
   width: 100vw;
   max-width: 1140px;
@@ -48,6 +69,26 @@
     display: flex;
   }
 }
+
+.modal {
+  &-part {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+.modal2 {
+  &-title {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 8px;
+  }
+  &-subtitle {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
 .form {
   &-header {
     padding: 20px 48px;

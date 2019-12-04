@@ -1,10 +1,10 @@
 $(function() {
 
 
-  $.fancybox($("#modal"), {
-    padding: 0,
-    width: '100%'
-  });
+  // $.fancybox($("#modal"), {
+  //   padding: 0,
+  //   width: '100%'
+  // });
   
   $("#modal-btn").click(function(event) {
     event.preventDefault();
@@ -15,7 +15,29 @@ $(function() {
   
   })
 
+  $("#modal-btn2").click(function(event) {
 
+    event.preventDefault();
+    $.fancybox($("#modal2"), {
+      padding: 0,
+      width: '100%'
+    });
+  
+  })
+
+  $("#modal-btn3").click(function(event) {
+
+    event.preventDefault();
+    $.fancybox($("#modal3"), {
+      padding: 0,
+      width: '100%'
+    });
+  
+  })
+
+  $('.form-close').click(function() {
+    $.fancybox.close()
+  })
   // form variables
   var formStep = 0
 
